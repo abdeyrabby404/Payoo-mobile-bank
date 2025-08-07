@@ -38,14 +38,14 @@
             </section>
 
             <!-- card section  -->
-            <section class="mx-3 mb-7">
+            <section class="mx-3 mb-7" >
                 <div class="cards grid grid-cols-3 gap-2">
-                    <div
+                    <div id="add-money-div"
                         class="border-gray-400 border-1 rounded-lg p-4 cursor-pointer hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50">
                         <img class="w-10 mx-auto" src="./assets/wallet1.png" alt="">
                         <h3 class="text-center font-semibold ">Add money</h3>
-                    </div>
-                    <div
+                    </div> 
+                    <div id="cashout-div"
                         class="border-gray-400 border-1 rounded-lg p-4 cursor-pointer hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50">
                         <img class="w-10 mx-auto" src="./assets/send1.png" alt="">
                         <h3 class="text-center font-semibold ">Cashout</h3>
@@ -65,7 +65,7 @@
                         <img class="w-10 mx-auto" src="./assets/purse1.png" alt="">
                         <h3 class="text-center font-semibold ">Pay Bill</h3>
                     </div>
-                    <div
+                    <div id=""
                         class="border-gray-400 border-1 rounded-lg p-4 cursor-pointer hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50">
                         <img class="w-10 mx-auto" src="./assets/transaction1.png" alt="">
                         <h3 class="text-center font-semibold ">Transactions</h3>
@@ -73,9 +73,23 @@
 
                 </div>
             </section>
-
+            <!-- Home section  -->
+             <!-- <section>
+                <div class="">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="text-center lg:text-left">
+      <h1 class="text-5xl font-bold"> </h1>
+      <p class="py-6">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
+    </div>
+    
+  </div>
+</div>
+             </section> -->
             <!-- Add money section  -->
-            <section class="mx-3">
+            <section class="mx-3" id="add-money-section">
                 <h1 class="font-bold">Add Money</h1>
 
                 <div class="">
@@ -96,7 +110,7 @@
                                     <label class="">Bank Account Number</label>
                                     <input id="account-number" type="number" class="input"
                                         placeholder="Enter 11 digit account number" required/>
-                                    <label class="">Amount to Add</label>
+                                    <label class="">Amount</label>
                                     <input id="add-ammount" type="number" class="input"
                                         placeholder="Add Amount to Add money" required/>
                                     <label class="">Pin Number</label>
@@ -113,6 +127,37 @@
                 </div>
 
             </section>
+
+            <!-- Cashout section  -->
+             <section class="mx-3" id="cashout-section">
+                <h1 class="font-bold">Cashout</h1>
+
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="">Agent Number</label>
+                                    <input id="account-number" type="number" class="input"
+                                        placeholder="Enter 11 digit Agent number" required/>
+                                    <label class="">Amount</label>
+                                    <input id="add-ammount" type="number" class="input"
+                                        placeholder="Add Amount to withdraw" required/>
+                                    <label class="">Pin Number</label>
+                                    <input id="pin-number" type="text" class="input"
+                                        placeholder="Enter 4 Digit pin (1234)" required/>
+                                    <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+                                    <button id="add-money-btn"
+                                        class="btn btn-neutral rounded-full mt-4 bg-blue-600 border-0">Withdraw
+                                        Money</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
 
 
 
@@ -199,6 +244,7 @@
 
 
     </section>
+<script src="./script/toggle.js"></script>
 <script src="./script/addMoney.js"></script>
 </body>
 
