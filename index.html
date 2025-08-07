@@ -9,8 +9,37 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    
+<body class="bg-slate-800">
+    <!-- Main section  -->
+    <section class="max-w-md min-h-screen bg-gray-50 mx-auto py-7">
+        <!-- Logo section  -->
+        <header>
+            <nav class="flex justify-center items-center mt-6">
+                <div class="mt-10 flex justify-center items-center relative w-9/12 mb-10">
+                    <img class="w-48 absolute" src="./assets/bg.png" alt="">
+                    <img class="w-16" src="./assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+        <!-- login form section  -->
+        <div>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="">Mobile Number</label>
+                            <input id="account-number"  type="number" class="input" placeholder="Enter your number" required/>
+                            <label class="">4 Digit Pin</label>
+                            <input id="pin-number"type="text" class="input" placeholder="Enter 4 Digit pin (1234)" required/>
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="login-btn" class="btn btn-neutral mt-4 bg-blue-600 border-0">Login</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/login.js"></script>
 </body>
 
 </html>
