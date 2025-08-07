@@ -19,13 +19,13 @@
                             <img class="w-12" src="./assets/Group.png" alt="">
                         </div>
                         <div class="flex flex-col">
-                            <h1 class="text-2xl font-semibold border-1 rounded-lg bg-gray-100 border-gray-50">$4500000
+                            <h1 class="text-2xl font-semibold border-1 rounded-lg bg-gray-100 border-gray-50"> $<span id="main-ammount">1000</span>
                             </h1>
                             <p class="">Available Balance</p>
 
                         </div>
                         <div class="navbar-end">
-                            <a class="btn">Log Out</a>
+                            <a id="log-out" class="btn">Log Out</a>
                         </div>
                     </div>
                 </nav>
@@ -81,7 +81,7 @@
                 <div class="">
                     <div class="hero-content flex-col lg:flex-row-reverse">
                         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                            <div class="card-body">
+                            <form class="card-body">
                                 <fieldset class="fieldset">
                                     <label class="">Select Bank</label>
                                     <select class="select">
@@ -94,15 +94,20 @@
                                         <option value="Upay">Upay</option>
                                     </select>
                                     <label class="">Bank Account Number</label>
-                            <input id="account-number"  type="number" class="input" placeholder="Enter 11 digit account number" required/>
-                            <label class="">Amount to Add</label>
-                            <input id="account-number"  type="number" class="input" placeholder="Add Amount to Withdraw" required/>
-                            <label class="">Pin Number</label>
-                            <input id="pin-number"type="text" class="input" placeholder="Enter 4 Digit pin (1234)" required/>
-                            <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
-                            <button id="login-btn" class="btn btn-neutral rounded-full mt-4 bg-blue-600 border-0">Add Money</button>
+                                    <input id="account-number" type="number" class="input"
+                                        placeholder="Enter 11 digit account number" required/>
+                                    <label class="">Amount to Add</label>
+                                    <input id="add-ammount" type="number" class="input"
+                                        placeholder="Add Amount to Add money" required/>
+                                    <label class="">Pin Number</label>
+                                    <input id="pin-number" type="text" class="input"
+                                        placeholder="Enter 4 Digit pin (1234)" required/>
+                                    <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+                                    <button id="add-money-btn"
+                                        class="btn btn-neutral rounded-full mt-4 bg-blue-600 border-0">Add
+                                        Money</button>
                                 </fieldset>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -194,7 +199,7 @@
 
 
     </section>
-
+<script src="./script/addMoney.js"></script>
 </body>
 
 </html>
