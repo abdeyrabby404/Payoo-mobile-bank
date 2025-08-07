@@ -25,7 +25,19 @@ document.getElementById('withdraw-money-btn')
         const restOfTheBalance = mainAmountFloat - amountWithdrawFloat;
         document.getElementById('main-ammount').innerText = restOfTheBalance;
         alert(amountWithdrawFloat + " " + 'Cashout successfully done!!'); 
-        }
+
+        const cashOutTransactionHistory = document.getElementById("transaction-container");
+        const p = document.createElement("p");
+        p.innerText=`
+        Cashout ${amountWithdraw} from ${phoneNumber} successfully!
+        `
+        cashOutTransactionHistory.appendChild(p);
+
+
+
+
+
+         }
         else{
             alert('Pin is incorrect');
         }

@@ -12,6 +12,7 @@ document.getElementById('login-btn')
     if(accountNumber.length === 11){
         if(pinNumberInt === 1234){
             window.location.href="./main.html"
+            alert('successfully Login! You got $1000 bonus!')
         }
         else{
             alert("Please give a correct Pin Number");

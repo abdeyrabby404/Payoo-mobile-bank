@@ -1,3 +1,5 @@
+// const { createContext, createElement } = require("react");
+
 document.getElementById('add-money-btn')
     .addEventListener('click', function (event) {
         event.preventDefault();
@@ -17,6 +19,16 @@ document.getElementById('add-money-btn')
                 const sum = mainAmountFloat + addAmountFloat;
                 document.getElementById('main-ammount').innerText = sum;
                 alert(addAmountFloat+ " "+"Money Added Successfully!");
+
+                const transactionHistory = document.getElementById("transaction-container");
+                const p = document.createElement("p");
+                p.innerText = `
+            Added ${addAmount} from ${accountNumberr} account Succesfully!
+                `
+                transactionHistory.appendChild(p);
+
+
+
             }
             else {
                 alert(
